@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dance Project🎶</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgba(0, 0, 0, 0.93) 11.2%,
+          rgb(63, 61, 61) 78.9%
+        );
+        font-size: 20px;
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        max-width: 60%;
+        margin: 0 auto;
+      }
+      h1 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 50px;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      h2 {
+        text-align: center;
+        text-decoration: line-through;
+        font-size: 40px;
+        text-shadow: 1px 1px 2px #ffffff;
+        letter-spacing: 3px;
+      }
+
+      p {
+        background-color: #ffffff;
+        text-align: left;
+        padding: 30px;
+        border-radius: 50px 4px 4px 4px;
+        line-height: 19px;
+      }
+
+      img {
+        margin: 20px 0;
+        max-width: 60%;
+        max-height: 80%;
+        border: 30px solid #000000;
+        box-shadow: 20px 10px #ffffff;
+      }
+
+      h3 {
+        font-size: 30px;
+        color: #ffffff;
+      }
+
+      button {
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 43px;
+        border: 1px solid #ffffff;
+        padding: 30px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        transition: all 150ms ease-in-out;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      h4 {
+        color: #ffffff;
+        font-size: 25px;
+      }
+
+      .about-info {
+        text-decoration: none;
+        color: #dbcdcd;
+        font-size: 28px;
+        text-align: center;
+      }
+      .about-info:hover {
+        font-weight: 900;
+        letter-spacing: 2px;
+        text-decoration: underline;
+      }
+      .learn-more-link {
+        color: #ffffff;
+        display: block;
+        text-decoration: none;
+        text-align: right;
+        font-size: 17px;
+      }
+      .author {
+        margin: 40px 0;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-part">
+      <h1>Let's freak out on the dance floor, <span>friend</span>🎧</h1>
+      <h4></h4>
+      <h2>We hate dancing</h2>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Street_dance"
+        class="about-info"
+        target="_blank"
+      >
+        About street dance
+      </a>
+      <p>
+        <strong>Street dance</strong> is an umbrella term for a large number of
+        social dance styles such as: breakdancing, popping, locking, house
+        dance, waacking etc. Social dance styles have many accompanying steps
+        and foundations, created organically from a culture, a moment in time, a
+        way of life, influenced by natural social interaction. A street dance is
+        a vernacular dance in an urban context. Vernacular dances are often
+        improvisational and social in nature, encouraging interaction and
+        contact with spectators and other dancers. These dances are a part of
+        the vernacular culture of the geographical area that they come from.
+      </p>
+      <div>
+        <a
+          class="learn-more-link"
+          href="https://en.wikipedia.org/wiki/List_of_street_and_vernacular_dances"
+          target="_blank"
+          >📃List of street and vernacular dances</a
+        >
+        <br />
+        <hr />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/043/183/original/615006.jpg?1660054927"
+          alt="Hip hop culture attributes"
+        />
+        <hr />
+        <h3>Join us NOW 📻</h3>
+        <button>To get a club membership</button>
+        <div class="author">Coded by Irena Ternovets👩‍💻</div>
+      </div>
+    </div>
+    <script>
+      function grantMemebership() {
+        let name = prompt("What is your name, sis?✌");
+        let age = prompt("How old are you?");
+        if (age >= 12) {
+          userName.innerHTML = name;
+          greeting.innerHTML =
+            "Welcome to our <em>Street Studio</em>!<br /> We will contact you💌";
+        } else {
+          alert(
+            "Sorry, you are unable to obtain a membership. BUT, we offer you to join Street Studio KIDS🌈"
+          );
+        }
+      }
+      let userName = document.querySelector("span");
+      let joinButton = document.querySelector("button");
+      let greeting = document.querySelector("h4");
+      joinButton.addEventListener("click", grantMemebership);
+    </script>
+  </body>
+</html>
